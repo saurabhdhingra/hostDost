@@ -4,23 +4,24 @@
 
 This project aims to replicate the core functionalities of Vercel, a popular platform for deploying and hosting frontend applications. With this clone, you can deploy and manage your applications with ease, leveraging the power of modern web technologies.
 
-## Features
+## Architecture
 
-- **Deployments**: Easily deploy your applications with a simple drag-and-drop interface or through integration with GitHub repositories.
-- **Custom Domains**: Manage custom domains and configure DNS settings effortlessly.
-- **Serverless Functions**: Create and deploy serverless functions to handle backend logic and APIs.
-- **Environment Variables**: Securely manage environment variables for your deployments.
-- **Real-time Logs**: Monitor deployment logs and serverless function logs in real-time.
-- **Automatic SSL**: Automatically provision SSL certificates for your custom domains.
-- **Team Collaboration**: Invite team members and collaborate on projects with fine-grained access control.
+The project has been divide into three microservices - upload, deployment, request handling(er). All three services co-ordinate with each other.
+
+### Upload Service Architecture
+![Workout](https://github.com/saurabhdhingra/hostDost/assets/75309640/641eb132-2ffc-4437-a899-ef708de76798)
+
+### Deployment Service Architecture
+![Workout-2](https://github.com/saurabhdhingra/hostDost/assets/75309640/5c072d9e-d773-42fa-9a19-92a78aeca704)
+
+### Request Handler
+![Workout-3](https://github.com/saurabhdhingra/hostDost/assets/75309640/135df9ed-9975-47c7-af46-4ebe118a26f3)
+
 
 ## Tech Stack
 
 - **Frontend**: React, Next.js, Tailwind CSS
-- **Backend**: Node.js, Express.js, MongoDB
-- **Real-time**: WebSockets
-- **Deployment**: Docker, Kubernetes
-- **CI/CD**: GitHub Actions
+- **Backend**: Node.js, Express.js, Cloudflare
 
 ## Getting Started
 
